@@ -1,0 +1,13 @@
+﻿services:
+  bankstatementextractor:
+    image: bankstatementextractor
+    build:
+      context: .
+      dockerfile: BankStatementExtractor/Dockerfile
+
+  bankstatementextractor.infrastructure.persistence:
+    image: bankstatementextractor.infrastructure.persistence
+    build:
+      context: .
+      dockerfile: BankStatementExtractor.Infrastructure.Persistence/Dockerfile
+
